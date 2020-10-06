@@ -1,6 +1,6 @@
 package com.mechanicraft.base.client;
 
-import com.mechanicraft.base.Mechanicraft;
+import com.mechanicraft.base.MechanicraftRegistry;
 import com.mechanicraft.base.client.block.PlateBlockEntityRenderer;
 
 import net.fabricmc.api.ClientModInitializer;
@@ -12,6 +12,6 @@ import net.fabricmc.fabric.api.client.rendereregistry.v1.BlockEntityRendererRegi
 public class MechanicraftClient implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
-		BlockEntityRendererRegistry.INSTANCE.register(Mechanicraft.PLATE_BLOCKENTITY, PlateBlockEntityRenderer::new);
+		BlockEntityRendererRegistry.INSTANCE.register(MechanicraftRegistry.PLATE_BLOCKENTITY, PlateBlockEntityRenderer::new);
 	}
 }

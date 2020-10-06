@@ -32,7 +32,9 @@ public class PlateBlockEntityRenderer extends BlockEntityRenderer<PlateBlockEnti
 			if (stack.isEmpty()) continue;
 			for (int j = 0; j < stack.getCount(); j++) {
 				matrices.translate(0, 0, -0.03125);
-				matrices.multiply(Vector3f.POSITIVE_Z.getDegreesQuaternion((float)Math.sin((i + 1) * (j + 1) + offset) * 90f + (float)Math.sin((i + 1) * (j + 1) * 0.25 + offset * 0.25) * 45f));
+				matrices.multiply(Vector3f.POSITIVE_Z.getDegreesQuaternion((float)Math.sin((i + 1) * (j + 1) + offset) * 90f
+																		 + (float)Math.sin((i + 1) * (j + 1) * 0.25
+																		 				 + offset * 0.25) * 45f));
 				matrices.multiply(Vector3f.POSITIVE_Y.getDegreesQuaternion((float)Math.sin((entity.getWorld().getTime() + tickDelta + offset) * 0.1) * 0.1f));
 				int lightAbove = WorldRenderer.getLightmapCoordinates(entity.getWorld(), entity.getPos().up());
 				MinecraftClient.getInstance().getItemRenderer().renderItem(stack, ModelTransformation.Mode.GROUND, lightAbove, OverlayTexture.DEFAULT_UV, matrices, vertexConsumers);

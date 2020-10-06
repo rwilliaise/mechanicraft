@@ -28,7 +28,7 @@ public class PlateBlock extends Block implements BlockEntityProvider {
 	private static final VoxelShape SHAPE = Block.createCuboidShape(3.0D, 0.0D, 3.0D, 13.0D, 1.0D, 13.0D);;
 
 	public PlateBlock() {
-		super(FabricBlockSettings.of(Material.STONE));
+		super(FabricBlockSettings.of(Material.STONE).noCollision().nonOpaque());
 	}
 
 	@Override
