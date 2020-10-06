@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "facing=north": { "model": "mechanicraft:block/directional_stone" },
+    "facing=east":  { "model": "mechanicraft:block/directional_stone", "y":  90},
+    "facing=south": { "model": "mechanicraft:block/directional_stone", "y": 180 },
+    "facing=west":  { "model": "mechanicraft:block/directional_stone", "y": 270 },
+    "facing=up":  { "model": "mechanicraft:block/directional_stone", "x": -90 },
+    "facing=down":  { "model": "mechanicraft:block/directional_stone", "x": 90 }
+  }
+}
