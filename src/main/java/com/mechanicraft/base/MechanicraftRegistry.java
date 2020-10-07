@@ -3,9 +3,8 @@ package com.mechanicraft.base;
 import java.util.function.Supplier;
 
 import com.mechanicraft.base.block.DirectionalStoneBlock;
-import com.mechanicraft.base.block.FireboxBlock;
+import com.mechanicraft.base.block.LaunchPadBlock;
 import com.mechanicraft.base.block.PlateBlock;
-import com.mechanicraft.base.block.entity.FireboxBlockEntity;
 import com.mechanicraft.base.block.entity.PlateBlockEntity;
 
 import net.minecraft.block.Block;
@@ -23,18 +22,16 @@ public class MechanicraftRegistry {
 	public static final Identifier FIREBOX_ID = new Identifier(Mechanicraft.MOD_ID, "firebox");
 
 	public static BlockEntityType<PlateBlockEntity> PLATE_BLOCKENTITY;
-	public static BlockEntityType<FireboxBlockEntity> FIREBOX_ENTITY;
 
-	public static final Block FIREBOX_BLOCK = new FireboxBlock();
 	public static final Block PLATE_BLOCK = new PlateBlock();
+	public static final Block LAUCH_PAD = new LaunchPadBlock();
 	public static final Block DIRECTIONAL_STONE = new DirectionalStoneBlock();
 
 	public static void initialize() {
 		initializeBlock(DIRECTIONAL_STONE, "directional_stone");
-		initializeBlock(FIREBOX_BLOCK, FIREBOX_ID);
 		initializeBlock(PLATE_BLOCK, PLATE_ID);
+		initializeBlock(LAUCH_PAD, "launch_pad");
 		PLATE_BLOCKENTITY = initializeBlockEntity(PLATE_BLOCK, PLATE_ID, PlateBlockEntity::new);
-		FIREBOX_ENTITY = initializeBlockEntity(FIREBOX_BLOCK, FIREBOX_ID, FireboxBlockEntity::new);
 	}
 
 	private static void initializeBlock(Block block, String id) {

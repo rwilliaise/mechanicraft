@@ -1,0 +1,8 @@
+{
+	"variants": {
+		"facing=north": { "model": "mechanicraft:block/launch_pad" },
+		"facing=east":  { "model": "mechanicraft:block/launch_pad", "y":  90},
+		"facing=south": { "model": "mechanicraft:block/launch_pad", "y": 180 },
+		"facing=west":  { "model": "mechanicraft:block/launch_pad", "y": 270 }
+	}
+}
