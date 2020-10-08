@@ -1,6 +1,6 @@
-package com.mechanicraft.base.client.block;
+package com.spellcraft.base.client.block;
 
-import com.mechanicraft.base.block.entity.PlateBlockEntity;
+import com.spellcraft.base.block.entity.PlateBlockEntity;
 
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.OverlayTexture;

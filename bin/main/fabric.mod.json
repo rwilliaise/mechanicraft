@@ -1,26 +1,26 @@
 {
   "schemaVersion": 1,
-  "id": "mechanicraft",
+  "id": "spellcraft",
   "version": "${version}",
-  "name": "Mechanicraft",
-  "description": "Mechanics for the average Minecrafter!",
+  "name": "Spellcraft",
+  "description": "Spells for the average Minecrafter!",
   "authors": [
     "ALotOfLetters"
   ],
   "contact": {},
   "license": "MIT",
-  "icon": "assets/mechanicraft/icon.png",
+  "icon": "assets/spellcraft/icon.png",
   "environment": "*",
   "entrypoints": {
     "client": [
-      { "value": "com.mechanicraft.base.client.MechanicraftClient" }
+      { "value": "com.spellcraft.base.client.SpellcraftClient" }
     ],
     "main": [
-      { "value": "com.mechanicraft.base.Mechanicraft" }
+      { "value": "com.spellcraft.base.Spellcraft" }
     ]
   },
   "mixins": [
-    "mechanicraft.mixins.json"
+    "spellcraft.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.10.0+build.208",

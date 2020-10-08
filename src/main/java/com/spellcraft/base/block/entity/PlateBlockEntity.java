@@ -1,6 +1,6 @@
-package com.mechanicraft.base.block.entity;
+package com.spellcraft.base.block.entity;
 
-import com.mechanicraft.base.MechanicraftRegistry;
+import com.spellcraft.base.SpellcraftRegistry;
 
 import net.fabricmc.fabric.api.block.entity.BlockEntityClientSerializable;
 import net.minecraft.block.BlockState;
@@ -20,7 +20,7 @@ public class PlateBlockEntity extends BlockEntity implements Inventory, Tickable
 	public int cooldown = 0;
 
 	public PlateBlockEntity() {
-		super(MechanicraftRegistry.PLATE_BLOCKENTITY);
+		super(SpellcraftRegistry.PLATE_BLOCKENTITY);
 	}
 
 	@Override

@@ -1,6 +1,6 @@
-package com.mechanicraft.base.block;
+package com.spellcraft.base.block;
 
-import com.mechanicraft.base.block.entity.PlateBlockEntity;
+import com.spellcraft.base.block.entity.PlateBlockEntity;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;

@@ -1,11 +1,11 @@
-package com.mechanicraft.base;
+package com.spellcraft.base;
 
 import java.util.function.Supplier;
 
-import com.mechanicraft.base.block.DirectionalStoneBlock;
-import com.mechanicraft.base.block.LaunchPadBlock;
-import com.mechanicraft.base.block.PlateBlock;
-import com.mechanicraft.base.block.entity.PlateBlockEntity;
+import com.spellcraft.base.block.DirectionalStoneBlock;
+import com.spellcraft.base.block.LaunchPadBlock;
+import com.spellcraft.base.block.PlateBlock;
+import com.spellcraft.base.block.entity.PlateBlockEntity;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.entity.BlockEntity;
@@ -16,10 +16,10 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-public class MechanicraftRegistry {
+public class SpellcraftRegistry {
 
-	public static final Identifier PLATE_ID = new Identifier(Mechanicraft.MOD_ID, "plate");
-	public static final Identifier FIREBOX_ID = new Identifier(Mechanicraft.MOD_ID, "firebox");
+	public static final Identifier PLATE_ID = new Identifier(Spellcraft.MOD_ID, "plate");
+	public static final Identifier FIREBOX_ID = new Identifier(Spellcraft.MOD_ID, "firebox");
 
 	public static BlockEntityType<PlateBlockEntity> PLATE_BLOCKENTITY;
 
@@ -35,8 +35,8 @@ public class MechanicraftRegistry {
 	}
 
 	private static void initializeBlock(Block block, String id) {
-		Registry.register(Registry.BLOCK, new Identifier(Mechanicraft.MOD_ID, id), block);
-		Registry.register(Registry.ITEM, new Identifier(Mechanicraft.MOD_ID, id), new BlockItem(block, new Item.Settings().group(ItemGroup.MISC)));
+		Registry.register(Registry.BLOCK, new Identifier(Spellcraft.MOD_ID, id), block);
+		Registry.register(Registry.ITEM, new Identifier(Spellcraft.MOD_ID, id), new BlockItem(block, new Item.Settings().group(ItemGroup.MISC)));
 	}
 
 	private static void initializeBlock(Block block, Identifier id) {
